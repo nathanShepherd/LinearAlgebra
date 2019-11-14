@@ -55,7 +55,6 @@ def dot(lhs, rhs):
 prod = []
 for i in range(len(alpha_orig)):
 	prod.append( dot(g, alpha_orig[i]))
-	
 
 #Associate alphabet encoding to each letter
 alpha = dict(zip(prod, letters))
@@ -81,4 +80,3 @@ for char in msg:
 			break
 
 print("\nDecoded message with len",len(decoded),":", decoded)
-
