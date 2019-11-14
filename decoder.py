@@ -40,8 +40,8 @@ alpha = {}
 def dot(lhs, rhs):
 	result = ""
 	for row in lhs:
-		found_one = False
 		print(row, rhs)
+		
 		summ = 0
 		for i in range(len(row)):
 			if row[i] == '1' and rhs[i] == '1':
@@ -55,7 +55,6 @@ def dot(lhs, rhs):
 prod = []
 for i in range(len(alpha_orig)):
 	prod.append( dot(g, alpha_orig[i]))
-	
 
 #Associate alphabet encoding to each letter
 alpha = dict(zip(prod, letters))
@@ -81,4 +80,3 @@ for char in msg:
 			break
 
 print("\nDecoded message with len",len(decoded),":", decoded)
-
