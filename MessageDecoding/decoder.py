@@ -40,8 +40,8 @@ alpha = {}
 def dot(lhs, rhs):
 	result = ""
 	for row in lhs:
-		found_one = False
 		print(row, rhs)
+
 		summ = 0
 		for i in range(len(row)):
 			if row[i] == '1' and rhs[i] == '1':
